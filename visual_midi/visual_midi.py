@@ -348,11 +348,11 @@ class Plotter:
         
         plot.title = Title(text=plot_title_text,
                            text_font_size=preset.title_text_font_size)
-        plot.plot_width = preset.plot_width
+        plot.width = preset.plot_width
         if preset.row_height:
-            plot.plot_height = pitch_range * preset.row_height
+            plot.height = pitch_range * preset.row_height
         else:
-            plot.plot_height = preset.plot_height
+            plot.height = preset.plot_height
         plot.x_range = Range1d(plot_start_time, plot_end_time)
         plot.y_range = Range1d(pitch_min, pitch_max + 1)
         plot.min_border_right = 50
