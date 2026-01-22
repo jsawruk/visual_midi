@@ -225,7 +225,6 @@ class Plotter:
                 y=pitch + preset.label_y_axis_offset_y,
                 x_units="screen",
                 text=str(pitch),
-                render_mode="css",
                 text_font_size=preset.label_text_font_size,
                 text_font_style=preset.label_text_font_style)
             plot.add_layout(label)
